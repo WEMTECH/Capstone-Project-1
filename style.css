@@ -19,7 +19,7 @@ body{
     margin: 0%;
 }
 .first-page > img {
-    height: 100vh;
+    height: auto;
     width: 100%;
     object-fit: cover;
     margin: auto;
@@ -42,9 +42,8 @@ body{
     margin-bottom: 50px;
 }
 .image1{
-    object-fit: cover;
-    width: 760px;
-    height: 600px;
+    width:100%;
+    height: auto;
 }
 .image2{
     height: 300px;
@@ -200,18 +199,32 @@ body{
     grid-column: span 2;
 }
 
-@media (min-width:201px) and (max-width:1200px){
-    .mid-town{
-        display: grid;
-        grid-template-columns: auto auto;
+@media (min-width:2px) and (max-width:500px){
+    .section1{
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .img-div{
+        display: flex;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        background-color: #bc9b6a;
     }
     .image1{
-        max-width: 100%;
+        width: 100%;
         height: auto;
+        padding: 0%;
+        margin: 0%;
     }
     .image2{
         max-width: 0%;
         height: 0%;
+        padding: 0%;
+        margin: 0%;
     }
     .dinning{
 
@@ -224,6 +237,9 @@ body{
     .dining-img{
         max-width: 100%;
         height: auto;
+    }
+    .dinning > p{
+        width: auto;
     }
     .dinning > h2{
         font-size: 6vw;
@@ -259,8 +275,9 @@ body{
         display: flex;
         flex-direction: column;
     }
-    /* .gallery-div{
-        display: inline-block;
-    } */
+      .gallery-div{
+        display: flex;
+        flex-direction: column;
+    }
    
 }
